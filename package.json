@@ -1,0 +1,20 @@
+{
+  "name": "randy-poke-back",
+  "version": "0.1.0",
+  "description": "\"Randy-Poké is a simple rest API that provides you with a random Pokémon.\"",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "env-cmd -f ./.env.development.local node app.js "
+  },
+  "author": "Gonzalo Torres Tonkowicz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^4.12.1"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
+  }
+}
