@@ -1,8 +1,8 @@
 const express = require('express');
 var app = express();
-const cors = require('cors');
 
 if (process.env.NODE_ENV !== 'production') {
+  const cors = require('cors');
   app.use(cors());
 }
 const port = process.env.PORT ? process.env.PORT : 3000;
