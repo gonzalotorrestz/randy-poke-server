@@ -3,6 +3,16 @@
 Randy-Poké is a simple NodeJs + Express REST API, connected to a MongoDB database, which returns random pokémons, from the first 6 generations (the rest will be added soon!).
 Filters by type and generation already available.
 
+Currently available here: <https://randy-poke-api.onrender.com>
+
+## Index
+
+1. [Available filters](#available-filters)
+2. [GET Single Random Pokémon](#get-single-random-pokémon-apiv2pokemon)
+3. [GET Multiple Random Pokémon](#get-multiple-random-pokémon-v2apipokemonn)
+4. [GET All Pokémon Types](#get-all-pokémon-types-v2apitype)
+5. [GET Pokémon Generations](#get-pokémon-generations-v2apigen)
+
 ## Available filters
 
 - type1: To find pokémons with this type. If type2 is not speficied, this filter will search pokémons with any combination that includes type1. Can be combined with generation filter.
