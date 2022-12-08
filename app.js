@@ -1,10 +1,18 @@
 const express = require('express');
+const cors = require('cors');
 var app = express();
 
+var corsOptions = {
+  origin: 'https://randy-poke-front.onrender.com/',
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
 if (process.env.NODE_ENV !== 'production') {
-  const cors = require('cors');
-  app.use(cors());
+  corsOptions.origin = '*';
 }
+
+app.use(cors(corsOptions));
+
 const port = process.env.PORT ? process.env.PORT : 3000;
 
 const singlePokemonController = require('./src/controllers/singlePokemonController');
