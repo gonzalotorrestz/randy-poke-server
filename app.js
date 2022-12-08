@@ -3,13 +3,14 @@ const cors = require('cors');
 var app = express();
 
 
-var whitelist = ['https://randy-poke-front.onrender.com/']
+var whitelist = ['https://randy-poke-front.onrender.com/','http://localhost:5174']
 
 var corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1 || !origin) {
       callback(null, true)
     } else {
+      console.log(origin)
       callback(new Error('Not allowed by CORS'))
     }
   }
