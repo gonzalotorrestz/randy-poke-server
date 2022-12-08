@@ -3,6 +3,8 @@
 Randy-Poké is a simple NodeJs + Express REST API, connected to a MongoDB database, which returns random pokémons, from the first 6 generations (the rest will be added soon!).
 Filters by type and generation already available.
 
+Filter by Mega/Primal version available.
+
 Currently available here: <https://randy-poke-api.onrender.com>
 
 ## Index

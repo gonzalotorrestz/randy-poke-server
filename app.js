@@ -2,13 +2,17 @@ const express = require('express');
 const cors = require('cors');
 var app = express();
 
-var corsOptions = {
-  origin: 'https://randy-poke-front.onrender.com/',
-  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
 
-if (process.env.NODE_ENV !== 'production') {
-  corsOptions.origin = '*';
+var whitelist = ['https://randy-poke-fron.onrender.com']
+
+var corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }
 }
 
 app.use(cors(corsOptions));
