@@ -3,7 +3,7 @@ const cors = require('cors');
 var app = express();
 
 
-var whitelist = ['https://randy-poke-fron.onrender.com']
+var whitelist = ['https://randy-poke-front.onrender.com/']
 
 var corsOptions = {
   origin: function (origin, callback) {
