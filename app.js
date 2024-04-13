@@ -68,5 +68,3 @@ app.get(`${urlV2}/gen/`, async (req, res, next) => {
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
-
-module.exports = app;
