@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "env-cmd -f ./.env.development.local node app.js "
+    "dev": "env-cmd -f ./.env.local node app.js "
   },
   "author": "Gonzalo Torres Tonkowicz",
   "license": "ISC",
@@ -19,3 +19,4 @@
     "env-cmd": "^10.1.0"
   }
 }
+  
